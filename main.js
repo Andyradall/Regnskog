@@ -69,9 +69,9 @@ $(document).ready(function () {
         $("#cf2 img.top").toggleClass("transparent");
         $("#cf_onclick").html("Klikk her og se fasaden");
 
-        $this.toggleClass("expanded");
+        $this.toggleClass("change");
       
-        if ($this.hasClass("expanded")) {
+        if ($this.hasClass("change")) {
             $this.html("Klikk her og se fasaden");
         } else {
             $this.html("Klikk her og se sannheten");
@@ -86,9 +86,9 @@ $(document).ready(function () {
         $("#cf3 img.top3").toggleClass("transparent");
         $("#cf_onclick3").html("Klikk her og se fasaden");
 
-        $this.toggleClass("expanded");
+        $this.toggleClass("change");
         
-        if ($this.hasClass("expanded")) {
+        if ($this.hasClass("change")) {
             $this.html("Klikk her og se fasaden");
         } else {
             $this.html("Klikk her og se sannheten");
