@@ -1,3 +1,5 @@
+// Branch init
+
 //Nedtelling øverst på siden
 
 function getTimeRemaining(endtime) {
