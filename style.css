@@ -1,0 +1,658 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16pt;
+    font-family: avenir, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: url("img/background.jpg") no-repeat;
+    background-color: #151515;
+}
+
+.wrapper {
+    width: 1200px;
+    height: 8550px;
+    margin: 100px auto;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+
+/* Blader på toppen */
+
+.leaves img {
+    width: 300px;
+    height: 300px;
+}
+
+.img1 {
+    margin-left: -70px;
+    margin-top: -90px;
+}
+
+.img2 {
+    top: 10px;
+    left: 300px;
+    position: absolute;
+}
+
+.img3 {
+    top: 5px;
+    left: 150px;
+    position: absolute;
+}
+
+
+.img4 {
+    top: 150px;
+    left: 5px;
+
+    position: absolute;
+    animation: wave 4s infinite alternate;
+}
+
+
+.img5 {
+    top: 10px;
+    left: 400px;
+    position: absolute;
+
+}
+
+.img6 {
+    top: 10px;
+    left: 500px;
+    position: absolute;
+}
+
+.img7 {
+    top: 3px;
+    left: 650px;
+    position: absolute;
+}
+
+.img8 {
+    top: 5px;
+    left: 800px;
+    position: absolute;
+
+}
+
+.img9 {
+    top: 14px;
+    left: 950px;
+    position: absolute;
+}
+
+.img10 {
+    top: 10px;
+    left: 1100px;
+    position: absolute;
+}
+
+.img11 {
+    top: 150px;
+    left: 130px;
+    position: absolute;
+
+    animation: wave 4s infinite alternate;
+}
+
+
+.img12 {
+    top: 150px;
+    left: 1000px;
+    position: absolute;
+
+    animation: wave 4s infinite alternate;
+}
+
+.img13 {
+    top: 150px;
+    left: 1140px;
+    position: absolute;
+
+    animation: wave 4s infinite alternate;
+}
+
+
+@keyframes wave {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-10deg);
+    }
+}
+
+
+/* Nedtelling øverst */
+
+#clockdiv {
+    width: 1200px;
+    height: 100px;
+
+    font-family: "Avenir Next", sans-serif;
+    color: #000000;
+    display: inline-block;
+    text-align: center;
+    font-size: 100px;
+}
+
+#clockdiv > div {
+    padding: 10px;
+    margin-top: -30px;
+    display: inline-block;
+}
+
+#clockdiv div > span {
+    display: inline-block;
+}
+
+.smalltext {
+    padding-top: 1px;
+    font-size: 14px;
+}
+
+/* Sitat øverst */
+
+.text-box1 {
+    width: 1200px;
+    height: 200px;
+    margin-top: 80px;
+    line-height: 1.4em;
+
+    font-size: 18pt;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* Toggle apebilde */
+
+#cf2 {
+    position: relative;
+    height: 281px;
+    width: 450px;
+    margin: 0 auto;
+}
+
+#cf2 img {
+    width: 1200px;
+    height: 881.2px;
+    margin-left: 28px;
+    margin-top: 50px;
+
+    top: -20px;
+    left: -41px;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.tekst-ape p {
+    position: absolute;
+    top: 240px;
+    left: 40px;
+
+    font-size: 20pt;
+    line-height: 1.4em;
+}
+
+#cf2 img.transparent {
+    opacity: 0;
+}
+
+#cf_onclick {
+    cursor: pointer;
+    margin-top: 960px;
+    margin-right: 480px
+}
+
+#cf_onclick:hover {
+    color: green;
+}
+
+/* Avskogning info rute */
+
+.avskogning {
+    position: relative;
+}
+
+.avskogning img {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+
+h1 {
+    margin-top: -65px;
+    margin-bottom: 10px;
+
+    font-family: "Courier New";
+    font-weight: 100;
+    font-size: 180px;
+}
+
+
+.whiteborder {
+    width: 1150px;
+    height: 500px;
+    border: 3px solid white;
+
+    top: 245px;
+    left: 20px;
+    position: absolute;
+}
+
+.text-box2 {
+    width: 500px;
+    height: 300px;
+
+    line-height: 1.4em;
+    font-size: 25pt;
+    color: white;
+
+    top: 350px;
+    left: 80px;
+    position: absolute;
+}
+
+.text-box3 {
+    width: 500px;
+    height: 300px;
+    font-size: 25pt;
+    color: white;
+
+    top: 150px;
+    left: 670px;
+    position: absolute;
+}
+
+.tekst3 {
+    margin-top: 70px;
+    margin-left: -20px;
+}
+
+/* Tiger graf */
+
+.graf img {
+    width: 100%;
+    height: auto;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.text-box4 {
+    width: 1200px;
+    height: 200px;
+    margin-top: 50px;
+    padding-top: 60px;
+
+    text-align: center;
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+.line {
+    height: 4px;
+    width: 7%;
+    left: 670px;
+    position: absolute;
+    background-color: green;
+}
+
+/* Norge */
+
+.norge {
+    margin-top: 62px;
+}
+
+.text-norge {
+    width: 500px;
+    height: 300px;
+
+    margin-top: 90px;
+    padding: 50px;
+    padding-top: 10px;
+
+    font-size: 20pt;
+    line-height: 1.4em;
+}
+
+/* Toggle leopardbilde */
+
+#cf3 {
+    position: relative;
+    height: 281px;
+    width: 450px;
+    margin: 0 auto;
+}
+
+#cf3 img {
+    width: 1200px;
+    height: 770px;
+    margin-left: 28px;
+    margin-top: 20px;
+
+    top: 10px;
+    left: -41px;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.tekst-leo p {
+    top: 200px;
+    left: 350px;
+    position: absolute;
+
+    font-size: 20pt;
+    width: 500px;
+    height: 400px;
+    line-height: 1.4em;
+    color: white;
+}
+
+#cf3 img.transparent {
+    opacity: 0;
+}
+
+#cf_onclick3 {
+    cursor: pointer;
+    margin-top: 850px;
+    margin-right: 480px;
+}
+
+#cf_onclick3:hover {
+    color: green;
+}
+
+
+/* kart */
+
+.text-box5 {
+    width: 1200px;
+    height: 200px;
+    margin-top: 50px;
+    padding-top: 40px;
+
+    text-align: center;
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+
+.container {
+    z-index: 1;
+    position: absolute;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+    margin-left: 40px;
+
+    top: 5760px;
+    position: relative;
+}
+
+
+.containerE {
+    position: absolute;
+    top: 6200px;
+    left: 410px;
+    cursor: pointer;
+}
+
+.containerE .info {
+    left: -30px;
+}
+
+.containerB {
+    position: absolute;
+    top: 6230px;
+    left: 510px;
+    cursor: pointer;
+}
+
+.containerB .info {
+    top: 240px;
+    left: 20px;
+}
+
+.containerM {
+    position: absolute;
+    top: 6280px;
+    left: 790px;
+    cursor: pointer;
+}
+
+.containerI {
+    position: absolute;
+    top: 6210px;
+    left: 980px;
+    cursor: pointer;
+}
+
+.containerI .info {
+    left: 90px;
+}
+
+/* Hotspot */
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    margin: 0 auto;
+    background-color: green;
+    cursor: pointer;
+    animation: glowing 1500ms infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: green;
+        box-shadow: 0 0 3px white;
+    }
+    50% {
+        background-color: green;
+        box-shadow: 0 0 30px green;
+    }
+    100% {
+        background-color: green;
+        box-shadow: 0 0 3px green;
+    }
+
+}
+
+.container:hover .button {
+    animation-name: buttons;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
+    transition: all .2s ease-in-out;
+
+}
+
+@keyframes buttons {
+
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.container .info {
+    background: #eadac8;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+    line-height: 1.4em;
+    width: 250px;
+
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -100%);
+    transform: translate(calc(-50% + 10px), calc(-100% - 10px));
+}
+
+.container:hover .info {
+    display: block;
+    border: 2px solid #a88355;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.20);
+    max-width: 250px;
+
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+h4 {
+    text-align: center;
+}
+
+/* Teller */
+
+.teller img {
+    width: 102.3%;
+    height: auto;
+    margin-top: 700px;
+}
+
+.teller {
+    position: relative;
+    color: white;
+}
+
+.tallteller {
+    width: 200px;
+    height: 400px;
+    font-family: 'Courier new';
+    font-size: 200pt;
+
+    top: 870px;
+    left: 390px;
+    position: absolute;
+}
+
+.whiteborder1 {
+    width: 1150px;
+    height: 600px;
+    border: 3px solid white;
+
+    top: 770px;
+    left: 21px;
+    position: absolute;
+}
+
+.text-box6 {
+    width: 700px;
+    height: 100px;
+    font-size: 25pt;
+
+    top: 870px;
+    left: 865px;
+    position: absolute;
+
+}
+
+.text-box7 {
+    width: 400px;
+    height: 400px;
+    font-size: 25pt;
+
+    top: 870px;
+    left: 105px;
+    position: absolute;
+}
+
+
+.text-box8 {
+    width: 1200px;
+    height: 200px;
+    margin-top: 100px;
+
+    text-align: center;
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+/* Elefant bilde */
+
+.slutt img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.slutt {
+    position: relative;
+}
+
+.text-box9 {
+    width: 400px;
+    height: 500px;
+    font-size: 25pt;
+
+    color: white;
+    line-height: 3em;
+
+    top: 150px;
+    left: 60px;
+    position: absolute;
+}
+
+.text-box9 ul {
+    color: green;
+}
+
+.text-box9 li span {
+    color: white;
+}
+
+/* Link nederst */
+
+.FNlink {
+    width: 280px;
+    height: 80px;
+    background-color: black;
+
+    margin-left: 450px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.FNlink a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    top: 30px;
+    left: 20px;
+    position: absolute;
+}
+
+.FNlink:hover {
+    background-color: green;
+}
