@@ -62,15 +62,37 @@ function increase() {
 
 
 // Toggle ape
+
 $(document).ready(function () {
     $("#cf_onclick").click(function () {
+        var $this = $(this);
         $("#cf2 img.top").toggleClass("transparent");
+        $("#cf_onclick").html("Klikk her og se fasaden");
+
+        $this.toggleClass("expanded");
+      
+        if ($this.hasClass("expanded")) {
+            $this.html("Klikk her og se fasaden");
+        } else {
+            $this.html("Klikk her og se sannheten");
+        }
     });
 });
 
 // Toggle leopard 
 $(document).ready(function () {
     $("#cf_onclick3").click(function () {
+        var $this = $(this);
         $("#cf3 img.top3").toggleClass("transparent");
+        $("#cf_onclick3").html("Klikk her og se fasaden");
+
+        $this.toggleClass("expanded");
+        
+        if ($this.hasClass("expanded")) {
+            $this.html("Klikk her og se fasaden");
+        } else {
+            $this.html("Klikk her og se sannheten");
+        }
     });
 });
+
