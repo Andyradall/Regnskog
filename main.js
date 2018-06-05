@@ -1,5 +1,4 @@
 //Nedtelling øverst på siden
-
 function getTimeRemaining(endtime) {
     var t = Date.parse(endtime) - Date.parse(new Date());
     var seconds = Math.floor((t / 1000) % 60);
@@ -45,7 +44,6 @@ initializeClock('clockdiv', deadline);
 
 
 //Nedtelling fotballbaner
-
 setTimeout(start, 5);
 
 var i = 1;
@@ -64,7 +62,6 @@ function increase() {
 
 
 // Toggle ape
-
 $(document).ready(function () {
     $("#cf_onclick").click(function () {
         $("#cf2 img.top").toggleClass("transparent");
@@ -72,7 +69,6 @@ $(document).ready(function () {
 });
 
 // Toggle leopard 
-
 $(document).ready(function () {
     $("#cf_onclick3").click(function () {
         $("#cf3 img.top3").toggleClass("transparent");
