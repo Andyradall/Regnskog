@@ -1,5 +1,3 @@
-// Branch init
-
 //Nedtelling øverst på siden
 
 function getTimeRemaining(endtime) {
@@ -34,6 +32,7 @@ function initializeClock(id, endtime) {
 
         if (t.total <= 0) {
             clearInterval(timeinterval);
+            document.getElementById("clockdiv").innerHTML = "Det er for seint";
         }
     }
 
@@ -42,7 +41,7 @@ function initializeClock(id, endtime) {
 }
 
 // Hvor man skriver inn tallene
-var deadline = new Date(Date.parse(new Date()) + 670 * 24 * 60 * 60 * 1000);
+var deadline = '2020-01-01T00:00:01+00:00';
 initializeClock('clockdiv', deadline);
 
 
